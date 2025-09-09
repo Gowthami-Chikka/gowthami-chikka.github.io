@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gowthami Chikka | ML Engineer & Data Engineer</title>
+  <meta name="description" content="Portfolio of Gowthami Chikka — ML Engineer & Data Engineer. Projects in fraud detection, healthcare AI, and RAG/LLM systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0f172a;         /* slate-900 */
+      --muted:#475569;        /* slate-600 */
+      --card:#f8fafc;         /* slate-50 */
+      --accent:#6d28d9;       /* violet-700 */
+      --accent-2:#14b8a6;     /* teal-500 */
+      --border:#e2e8f0;       /* slate-200 */
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--text); background:var(--bg);
+    }
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(255,255,255,.8); border-bottom:1px solid var(--border);
+    }
+    .nav{
+      max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between;
+      padding:12px 20px;
+    }
+    .brand{font-weight:700; letter-spacing:.3px}
+    nav a{color:var(--muted); text-decoration:none; margin:0 10px; font-weight:500}
+    nav a:hover{color:var(--text)}
+    /* Hero */
+    .hero{
+      max-width:1100px; margin:0 auto; padding:72px 20px 40px; display:grid;
+      grid-template-columns:1fr; text-align:center;
+    }
+    .name{font-family:"Playfair Display", serif; font-size:54px; line-height:1.05; margin:8px 0}
+    .title{font-size:20px; color:var(--muted); margin-bottom:10px}
+    .tagline{max-width:800px; margin:18px auto; color:var(--muted)}
+    .cta{display:flex; gap:12px; justify-content:center; margin-top:18px}
+    .btn{
+      border:1px solid var(--border); padding:12px 18px; border-radius:10px; text-decoration:none;
+      font-weight:600; color:var(--text); background:#fff;
+    }
+    .btn.primary{background:var(--text); color:#fff; border-color:var(--text)}
+    .btn.primary:hover{background:#1f2937}
+    .btn:hover{transform:translateY(-1px)}
+    .icons{display:flex; gap:14px; justify-content:center; margin-top:16px}
+    .icons a{color:var(--muted)}
+    .icons a:hover{color:var(--text)}
+    /* Sections */
+    section{padding:56px 20px}
+    .wrap{max-width:1100px; margin:0 auto}
+    h2{font-size:28px; margin:0 0 18px}
+    p{line-height:1.6}
+    .grid{display:grid; gap:18px}
+    .two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:880px){ .two,.three{grid-template-columns:1fr} }
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px;
+    }
+    .kpis{display:flex; gap:10px; flex-wrap:wrap; margin-top:8px}
+    .chip{
+      font-size:12px; padding:6px 10px; background:#fff; border:1px solid var(--border); border-radius:999px;
+    }
+    .muted{color:var(--muted)}
+    /* Footer */
+    footer{border-top:1px solid var(--border); padding:24px 20px; text-align:center; color:var(--muted)}
+    /* Tiny smooth shadow */
+    .card, .btn{box-shadow:0 1px 0 rgba(0,0,0,0.04)}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">GC.</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <div class="name">Gowthami Chikka</div>
+      <div class="title">ML Engineer & Data Engineer</div>
+      <div class="icons">
+        <!-- Replace links -->
+        <a href="https://github.com/Gowthami-Chikka" aria-label="GitHub">
+          <!-- GitHub SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.34-1.79-1.34-1.79-1.09-.75.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.82 1.3 3.51.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.53.12-3.19 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.89.12 3.19.78.84 1.24 1.9 1.24 3.22 0 4.62-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.57A12 12 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gowthami-chikka-65897a203" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.05C12.7 8.9 14.2 8 16.4 8 21 8 22 10.9 22 15.2V24h-4v-7.7c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4V24h-4V8z"/></svg>
+        </a>
+        <a href="mailto:chikka.gowthami99@gmail.com" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13 0 6V4l12 7L24 4v2l-12 7Zm12-7v14H0V6l12 7L24 6Z"/></svg>
+        </a>
+      </div>
+      <p class="tagline">
+        Transforming raw data into actionable insights with predictive modeling, real-time fraud detection,
+        and intelligent retrieval systems on AWS, Azure, and Kubernetes.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="assets/Gowthami_Chikka_Resume.pdf">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p class="muted">
+        I’m an ML Engineer with 4+ years of experience building end-to-end ML systems across finance,
+        healthcare, and IT. I specialize in fraud detection, recommendation/ranking, NLP, and RAG/LLM systems.
+        I ship production models with Airflow, Docker, Kubernetes, and GitHub Actions, and I love turning messy
+        data into clear, measurable wins for the business.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="grid three">
+        <div class="card"><strong>Programming & ML</strong><div class="kpis">
+          <span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">SQL</span>
+          <span class="chip">TensorFlow</span><span class="chip">PyTorch</span><span class="chip">scikit-learn</span>
+          <span class="chip">LangChain</span><span class="chip">LLMs</span>
+        </div></div>
+        <div class="card"><strong>Cloud & Data</strong><div class="kpis">
+          <span class="chip">AWS (SageMaker, S3, Glue, Redshift)</span>
+          <span class="chip">Azure ML</span><span class="chip">Databricks</span><span class="chip">PostgreSQL</span>
+          <span class="chip">MongoDB</span><span class="chip">Snowflake</span>
+        </div></div>
+        <div class="card"><strong>MLOps & Visualization</strong><div class="kpis">
+          <span class="chip">Airflow</span><span class="chip">MLflow</span><span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span><span class="chip">REST APIs</span>
+          <span class="chip">Tableau</span><span class="chip">Power BI</span>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <h2>Selected Projects</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Healthcare AI — Fibroid Detection Pipeline</h3>
+          <p class="muted">
+            Built a scalable Azure-based pipeline to predict fibroid occurrence from ultrasound/MRI + EHR.
+            Deep learning (PyTorch) with explainable Grad-CAM; CI/CD via Azure ML + DevOps.
+          </p>
+          <div class="kpis">
+            <span class="chip">+15% recall</span>
+            <span class="chip">HIPAA compliant</span>
+            <span class="chip">Azure ML</span>
+            <span class="chip">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Financial Risk Analytics — Fraud Detection</h3>
+          <p class="muted">
+            Real-time fraud detection on AWS (SageMaker, Glue, Redshift). Logistic/XGBoost ensembles,
+            automated retraining, CloudWatch monitoring, and executive KPI dashboards.
+          </p>
+          <div class="kpis">
+            <span class="chip">−22% false positives</span>
+            <span class="chip">Basel/SOX</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Airflow</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>RAG + LLM Agent — Enterprise Knowledge Retrieval</h3>
+          <p class="muted">
+            Domain-tuned RAG agent (LangChain + LLaMA 3) with custom embeddings and ranking optimization.
+            FastAPI microservice on Kubernetes for scalable multi-user access.
+          </p>
+          <div class="kpis">
+            <span class="chip">40% faster discovery</span>
+            <span class="chip">LangChain</span>
+            <span class="chip">LLMs</span>
+            <span class="chip">Kubernetes</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Model Selection Framework (Research)</h3>
+          <p class="muted">
+            Co-developed a matrix-based framework mapping dataset traits to model families,
+            synthesizing insights from 300+ papers at the University of Oklahoma.
+          </p>
+          <div class="kpis">
+            <span class="chip">300+ papers</span>
+            <span class="chip">Reproducible matrices</span>
+            <span class="chip">Academic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <div class="grid two">
+        <div class="card">
+          <strong>ML Engineer — Northern Trust, USA</strong><br>
+          <span class="muted">Feb 2025 – Present</span>
+          <ul class="muted">
+            <li>Deployed fraud models (Python, PySpark, TensorFlow) — −22% false positives; −18% investigation time.</li>
+            <li>1TB+/day pipelines on AWS Glue/S3/Redshift; Airflow orchestration (−40% training cycle time).</li>
+            <li>Microservices with Docker/Kubernetes/REST; 99.9% uptime; Tableau/Power BI for 100+ KPIs.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>AI Data Engineer — Streebo Inc, India</strong><br>
+          <span class="muted">Sep 2019 – Dec 2022</span>
+          <ul class="muted">
+            <li>Automated ticket classification; +30% accuracy, −25% handling time.</li>
+            <li>Sentiment & text classification on SageMaker (+20% CSAT); MLflow + Airflow drift monitoring.</li>
+            <li>Early personalization & ranking models; REST APIs across 10+ enterprise apps.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="grid two">
+        <div class="card"><strong>M.S., Data Science & Analytics</strong><br>
+          <span class="muted">University of Oklahoma (Aug 2023 – Dec 2024)</span>
+        </div>
+        <div class="card"><strong>B.Tech, Mechanical Engineering</strong><br>
+          <span class="muted">G Pulla Reddy Engineering College (2016 – 2020)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="muted">Open to ML Engineer / Data Engineer roles. Let’s build something impactful.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:chikka.gowthami99@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/gowthami-chikka-65897a203">LinkedIn</a>
+        <a class="btn" href="https://github.com/Gowthami-Chikka">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="y"></span> Gowthami Chikka • Hosted on GitHub Pages
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
